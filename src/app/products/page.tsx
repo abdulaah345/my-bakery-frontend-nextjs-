@@ -19,7 +19,7 @@ export default function ProductsPage() {
   const [loading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://bakeryapisssssa.runasp.net/api/Products")
+    fetch("https://bakeryapisssssa.runasp.net/api/Products")
       .then((res) => res.json())
       .then((data) => {
         // جرّب هل البيانات جاية عادي ولا جوا $values
