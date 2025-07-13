@@ -11,6 +11,7 @@ type producttype = {
   imageUrl: string;
   categoryId: number;
   categoryName: string;
+  quantity: number;
 };
 
 const Product = ({ product }: { product: producttype }) => {
@@ -19,7 +20,16 @@ const Product = ({ product }: { product: producttype }) => {
   const handelClick = (pro: producttype) => {
     toast("Added to Cart");
     setcartitems((prev) => {
-      return [...prev, pro];
+      const existing = prev.find((item) => item.id === pro.id);
+      if (existing) {
+        return prev.map((item) =>
+          item.id === pro.id
+            ? { ...item, quantity: (item.quantity || 1) + 1 }
+            : item
+        );
+      } else {
+        return [...prev, { ...pro, quantity: 1 }];
+      }
     });
   };
   return (
@@ -31,7 +41,7 @@ const Product = ({ product }: { product: producttype }) => {
       />
       <div className="p-4 flex-1">
         <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
-        <p className="text-gray-600 mb-2">{product.description}</p>
+        <p className="text-gray-600 mb-2 truncate">{product.description}</p>
         <p className="text-lg font-bold">{product.price} ج.م</p>
       </div>
       <div className=" mb-2 flex justify-center items-center  ">
