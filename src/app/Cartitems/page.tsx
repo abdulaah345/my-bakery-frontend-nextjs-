@@ -3,16 +3,7 @@
 import React, { useContext } from "react";
 import Cartitem from "../cartitem/page";
 import { Shoppingcartcontext } from "../context/page";
-type producttypess = {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-  imageUrl: string;
-  categoryId: number;
-  categoryName: string;
-  quantity: number;
-};
+
 const Cartitems = () => {
   const { cartitems } = useContext(Shoppingcartcontext);
 

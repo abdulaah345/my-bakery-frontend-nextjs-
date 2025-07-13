@@ -20,40 +20,40 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <a
+          <Link
             href="/"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/products"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
           >
             Products
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/about"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
           >
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/contact"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
           >
             Contact
-          </a>
+          </Link>
         </li>
         <li className="relative">
           <Link href="/Cartitems" className="hover:underline">
