@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Product from "../Product/page";
+import Product from "../component/Product/page";
 
 type ProductType = {
   id: number;
