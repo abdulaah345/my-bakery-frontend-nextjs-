@@ -23,6 +23,7 @@ export default function ProductsPage() {
       .then((res) => res.json())
       .then((data) => {
         // جرّب هل البيانات جاية عادي ولا جوا $values
+        console.log("🚀 Data from API:", data); // 👈 اطبع هنا
         if (Array.isArray(data)) {
           setProducts(data);
         } else if (Array.isArray(data?.$values)) {
