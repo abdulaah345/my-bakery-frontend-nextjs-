@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import Button from "../component/Button";
+import Button from "../../../public/component/Button";
 
 const images = ["/images/b.jpeg", "/images/e.jpeg", "/images/f.jpeg"];
 
