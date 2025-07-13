@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ShoppingcartcontextProvider, {
   Shoppingcartcontext,
-} from "./context/page";
+} from "../../public/context/page";
 
 import Navbar from "./Navbar/page";
 

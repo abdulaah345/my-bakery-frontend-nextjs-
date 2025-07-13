@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext } from "react";
-import { Shoppingcartcontext } from "../../../src/app/context/page";
+import { Shoppingcartcontext } from "../../context/page";
 type producttypess = {
   id: number;
   name: string;

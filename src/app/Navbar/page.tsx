@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useState } from "react";
-import { Shoppingcartcontext } from "../context/page";
+import { Shoppingcartcontext } from "../../../public/context/page";
 import Link from "next/link";
 
 const Navbar = () => {

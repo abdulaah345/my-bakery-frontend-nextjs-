@@ -1,7 +1,7 @@
 "use client";
 import React, { useContext, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { Shoppingcartcontext } from "../../../src/app/context/page";
+import { Shoppingcartcontext } from "../../context/page";
 
 type producttype = {
   id: number;
