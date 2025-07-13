@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useContext } from "react";
-import Cartitem from "../cartitem/page";
+import Cartitem from "../component/cartitem/page";
 import { Shoppingcartcontext } from "../context/page";
 
 const Cartitems = () => {
