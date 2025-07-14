@@ -40,9 +40,11 @@ const Product = ({ product }: { product: producttype }) => {
         className="w-full h-56 object-cover"
       />
       <div className="p-4 flex-1">
-        <h2 className="text-xl font-semibold mb-2">{product.name}</h2>
-        <p className="text-gray-600 mb-2 truncate">{product.description}</p>
-        <p className="text-lg font-bold">{product.price} ج.م</p>
+        <h2 className="text-lg font-bold text-[#d49f68]">{product.name}</h2>
+        <p className="text-lg font-bold text-[#d49f68]">
+          {product.description}
+        </p>
+        <p className="text-lg font-bold text-[#d49f68]">{product.price} ج.م</p>
       </div>
       <div className=" mb-2 flex justify-center items-center  ">
         <button

@@ -21,6 +21,7 @@ const Navbar = () => {
       >
         <li>
           <Link
+            onClick={() => setmenue(false)}
             href="/"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
@@ -30,6 +31,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            onClick={() => setmenue(false)}
             href="/products"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
@@ -39,6 +41,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            onClick={() => setmenue(false)}
             href="/about"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
@@ -48,6 +51,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link
+            onClick={() => setmenue(false)}
             href="/contact"
             style={{ color: "var(--foreground)" }}
             className="hover:underline"
@@ -56,7 +60,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="relative">
-          <Link href="/Cartitems" className="hover:underline">
+          <Link
+            href="/Cartitems"
+            className="hover:underline"
+            onClick={() => setmenue(false)}
+          >
             🛒
             {cartitems.length > 0 && (
               <span className="absolute -top-2 -right-3 bg-red-600 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
